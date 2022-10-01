@@ -1,0 +1,41 @@
+<div>
+  <div class="submit-form">
+     
+    <div class="form-group">
+        <label for="description">Ingress Year</label>
+        <input
+          class="form-control"
+          id="year"
+          type="number" 
+          required [(ngModel)]="productYear.year"
+          name="year"/>
+  </div>
+      <button (click)="getRegister()" class="btn btn-success">Submit</button>
+   
+<br>
+<br> 
+    <div  *ngIf="submitted" class="col-md-12">
+      <h4>Sales Product for Year</h4>
+      
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Name </th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr 
+            *ngFor="let val of salesForYear; let i = index">
+            
+              <th scope="row">{{val.name }} </th>
+              <td> {{val.total| currency}} </td>
+            </tr>
+           
+          </tbody>
+        </table>
+    </div>
+  
+
+  </div>
+</div>
