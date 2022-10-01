@@ -1,11 +1,19 @@
 <div>
     <div class="submit-form">
 
-      <a class="nav-link"  translate>      {{ 'SystemParameters'}}
-      </a>
-
+      
         <label for="description">Create Product</label>
         
+
+        <div class="input-field col s12">
+          <select id="listCenTra">
+            <option value="" *ngFor="let dato of BettingSoccerDTO ">
+               {{dato.teamName}}
+           </option>
+          </select>
+        </div>
+    
+
         <div class="form-group">
             <label for="description">Ingress Code</label>
             <input class="form-control" id="code" required  name="code" />
@@ -94,7 +102,7 @@
                 </thead>
                 <tbody>
                   <tr 
-                  *ngFor="let val of ProductDto; let i = index">
+                  *ngFor="let val of BettingSoccerDTO; let i = index">
                   
                     <!-- <th scope="row">{{val.name }} </th>
                     <td> {{val.code }} </td>

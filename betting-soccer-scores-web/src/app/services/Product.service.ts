@@ -16,7 +16,7 @@ export class ProductAllService {
 
   constructor(private http: HttpClient) { }
 
-  getAll(): Observable<BettingSoccerDTO[]> {
+  getSoccerTeamAll(): Observable<BettingSoccerDTO[]> {
 
     var url: string = "/api/SoccerTeam";
 

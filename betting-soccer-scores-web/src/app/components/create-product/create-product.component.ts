@@ -16,7 +16,7 @@ export class CreateProductComponent implements OnInit {
   productDto: BettingSoccerDTO = {};
   
   response: ResponseMessage={};
-  ProductDto?: BettingSoccerDTO[];
+  BettingSoccerDTO?: BettingSoccerDTO[];
 
   submitted = false;
   constructor(private productAllService: ProductAllService) { }
@@ -24,9 +24,8 @@ export class CreateProductComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
   getRegister(): void {
-
+debugger;
     this.getProductAll();
 
     this.setCreteProduct();
@@ -37,10 +36,6 @@ export class CreateProductComponent implements OnInit {
       .subscribe(
         data => {
           this.response= data;
-console.log(this.response);
-
-console.log(this.response.result);
-
 
           if (this.response != undefined && this.response.result !=undefined && this.response.result>0 ) {
             this.submitted=true;
@@ -58,11 +53,12 @@ console.log(this.response.result);
   
   getProductAll(): void {
     debugger;
-    this.productAllService.getAll()
+    this.productAllService.getSoccerTeamAll()
       .subscribe(
         data => {
-          this.ProductDto = data;
-          console.log('this.ProductDto1',this.ProductDto);
+          this.BettingSoccerDTO = data;
+          
+        console.log('this.BettingSoccerDTO',this.BettingSoccerDTO);
         },
         error => {
           console.log(error);

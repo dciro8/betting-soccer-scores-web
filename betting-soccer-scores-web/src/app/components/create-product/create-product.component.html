@@ -44,9 +44,6 @@
         <button (click)="getRegister()" class="btn btn-success">Submit</button>
     </div>
 
-    
-
-    
     <br>
     <br>
     <div *ngIf="submitted" class="col-md-12">
@@ -91,15 +88,15 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr 
-                  *ngFor="let val of ProductDto; let i = index">
+                  <!-- <tr 
+                  *ngFor="let val of ProductDto; let i = index"> -->
                   
                     <!-- <th scope="row">{{val.name }} </th>
                     <td> {{val.code }} </td>
                     <td>{{val.price  | currency}} </td>
                     <td>{{val.quantity }} </td>
-                    <td>{{val.minimunAlloweb}} </td> -->
-                  </tr>
+                    <td>{{val.minimunAlloweb}} </td>
+                  </tr> -->
                  
                 </tbody>
               </table>

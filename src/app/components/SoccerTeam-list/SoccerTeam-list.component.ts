@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductDto } from 'src/app/models/Product.model';
+import { BettingSoccerDTO } from 'src/app/models/Product.model';
 import { ProductAllService } from 'src/app/services/Product.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { ProductAllService } from 'src/app/services/Product.service';
   styleUrls: ['./SoccerTeam-list.component.css']
 })
 export class GetSoccerTeamListComponent implements OnInit {
-  ProductDto?: ProductDto[];
+  ProductDto?: BettingSoccerDTO[];
 
   constructor(private productAllService: ProductAllService ) { }
 
@@ -27,7 +27,4 @@ export class GetSoccerTeamListComponent implements OnInit {
           console.log(error);
         });
   }
-  lista:string[]=["hola","que","tal", "estas"];
-  
-  seleccionados:string[]=[];
 }

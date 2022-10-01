@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductDto } from 'src/app/models/Product.model';
+import { BettingSoccerDTO } from 'src/app/models/Product.model';
 import { ProductYearDto, SalesForYear } from 'src/app/models/ProductForYear';
 import { ProductAllService } from 'src/app/services/Product.service';
 
@@ -13,7 +13,7 @@ export class GetSaleYearComponent implements OnInit {
   submitted = false;
   productYear: ProductYearDto = {};
   salesForYear?:SalesForYear[];
-  ProductDto?: ProductDto[];
+  ProductDto?: BettingSoccerDTO[];
   constructor(private productAllService: ProductAllService) { }
 
   ngOnInit(): void {
