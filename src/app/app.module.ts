@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { GetSaleYearComponent } from './components/Billing/GetSaleYear.component';
 import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
 
-import {GetAllProductListComponent} from './components/ProdcutAll-list/ProdcutAll-list.component';
+import {GetSoccerTeamListComponent} from './components/SoccerTeam-list/SoccerTeam-list.component';
 import { CreateProductComponent } from './components/create-product/create-product.component';
 
 @NgModule({
@@ -16,7 +16,7 @@ import { CreateProductComponent } from './components/create-product/create-produ
     AppComponent,
     GetSaleYearComponent,
     TutorialDetailsComponent,
-    GetAllProductListComponent,
+    GetSoccerTeamListComponent,
     CreateProductComponent
   ],
   imports: [

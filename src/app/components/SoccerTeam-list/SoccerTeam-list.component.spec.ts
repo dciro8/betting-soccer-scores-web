@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GetAllProductListComponent } from './ProdcutAll-list.component';
+import { GetSoccerTeamListComponent } from './SoccerTeam-list.component';
 
-describe('GetAllProductListComponent', () => {
-  let component: GetAllProductListComponent;
-  let fixture: ComponentFixture<GetAllProductListComponent>;
+describe('GetSoccerTeamListComponent', () => {
+  let component: GetSoccerTeamListComponent;
+  let fixture: ComponentFixture<GetSoccerTeamListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GetAllProductListComponent]
+      declarations: [ GetSoccerTeamListComponent]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GetAllProductListComponent);
+    fixture = TestBed.createComponent(GetSoccerTeamListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

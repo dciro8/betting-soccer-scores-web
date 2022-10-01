@@ -3,11 +3,11 @@ import { ProductDto } from 'src/app/models/Product.model';
 import { ProductAllService } from 'src/app/services/Product.service';
 
 @Component({
-  selector: 'app-ProdcutAll-list',
-  templateUrl: './ProdcutAll-list.component.html',
-  styleUrls: ['./ProdcutAll-list.component.css']
+  selector: 'app-SoccerTeam-list',
+  templateUrl: './SoccerTeam-list.component.html',
+  styleUrls: ['./SoccerTeam-list.component.css']
 })
-export class GetAllProductListComponent implements OnInit {
+export class GetSoccerTeamListComponent implements OnInit {
   ProductDto?: ProductDto[];
 
   constructor(private productAllService: ProductAllService ) { }
@@ -27,5 +27,7 @@ export class GetAllProductListComponent implements OnInit {
           console.log(error);
         });
   }
-
+  lista:string[]=["hola","que","tal", "estas"];
+  
+  seleccionados:string[]=[];
 }
