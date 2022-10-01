@@ -2,10 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BettingSoccerDTO } from 'src/app/models/Product.model';
 import { ResponseMessage } from 'src/app/models/ResponseMessage.model';
 import { ProductAllService } from 'src/app/services/Product.service';
-;
 import { Router } from '@angular/router';
-
-
 @Component({
   selector: 'app-create-product',
   templateUrl: './create-product.component.html',

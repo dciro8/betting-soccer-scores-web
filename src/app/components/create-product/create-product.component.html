@@ -5,51 +5,45 @@
         <label for="description">Create Product</label>
         
 
-        <div class="input-field col s12">
-          <select id="listCenTra">
-            <option value="" *ngFor="let dato of BettingSoccerDTO ">
-               {{dato.teamName}}
-           </option>
-          </select>
-        </div>
     
 
         <div class="form-group">
-            <label for="description">Ingress Code</label>
-            <input class="form-control" id="code" required  name="code" />
-            <!-- [(ngModel)]="productDto.code" -->
+            <label for="description">Ingress Team 1</label>
+            <div class="input-field col s12">
+              <select id="listCenTra">
+                <option value="" *ngFor="let dato of BettingSoccerDTO ">
+                   {{dato.teamName}}
+               </option>
+              </select>
+            </div>
+          
           </div>
 
         <div class="form-group">
-            <label for="description">Ingress Name</label>
-            <input class="form-control" id="Name" required name="Name" />
-            <!-- [(ngModel)]="productDto.name"  -->
+            <label for="description">Ingress Name 2</label>
+            <div class="input-field col s12">
+              <select id="listCenTra">
+                <option value="" *ngFor="let dato of BettingSoccerDTO ">
+                   {{dato.teamName}}
+               </option>
+              </select>
+            </div>
           </div>
 
         
         <div class="form-group">
-            <label for="description">Ingress Price</label>
+            <label for="description">Ingress marker 1</label>
             <input class="form-control" id="Price" 
             type="number" required  name="Price" />
             <!-- [(ngModel)]="productDto.price" -->
         </div>
 
-        
         <div class="form-group">
-            <label for="description">Ingress Quantity</label>
-            <input class="form-control" id="Quantity" 
-            type="number" required  name="Quantity" />
-            <!-- [(ngModel)]="productDto.quantity" -->
-          </div>
-
-        
-        <div class="form-group">
-            <label for="description">Ingress MinimunAlloweb</label>
-            <input class="form-control" id="MinimunAlloweb" 
-            type="number" required name="MinimunAlloweb" />
-            <!-- [(ngModel)]="productDto.minimunAlloweb"  -->
-          </div>
-        
+          <label for="description">Ingress marker 2</label>
+          <input class="form-control" id="Price" 
+          type="number" required  name="Price" />
+          <!-- [(ngModel)]="productDto.price" -->
+      </div>
 
         <button (click)="getRegister()" class="btn btn-success">Submit</button>
     </div>
