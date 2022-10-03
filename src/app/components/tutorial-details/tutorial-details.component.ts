@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductAllService} from 'src/app/services/Product.service';
+import { bettingSoccerService} from 'src/app/services/bettingSoccer.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -12,7 +12,7 @@ export class TutorialDetailsComponent implements OnInit {
   message = '';
 
   constructor(
-    private productAllService: ProductAllService,
+    private productAllService: bettingSoccerService,
     private route: ActivatedRoute,
     private router: Router) { }
 

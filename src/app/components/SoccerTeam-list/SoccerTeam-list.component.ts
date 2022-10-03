@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { BettingSoccerDTO } from 'src/app/models/Product.model';
-import { ProductAllService } from 'src/app/services/Product.service';
+import { BettingSoccerDTO } from 'src/app/models/BettingSoccer.model';
+import { bettingSoccerService } from 'src/app/services/bettingSoccer.service';
 
 @Component({
   selector: 'app-SoccerTeam-list',
@@ -10,14 +10,14 @@ import { ProductAllService } from 'src/app/services/Product.service';
 export class GetSoccerTeamListComponent implements OnInit {
   ProductDto?: BettingSoccerDTO[];
 
-  constructor(private productAllService: ProductAllService ) { }
+  constructor(private bettingSoccerSer: bettingSoccerService ) { }
 
   ngOnInit(): void {
     this.getProductAll();
   }
 
   getProductAll(): void {
-    this.productAllService.getAll()
+    this.bettingSoccerSer.getAllSoccerTeam()
       .subscribe(
         data => {
           this.ProductDto = data;
