@@ -13,8 +13,6 @@
       </select>
       </p> -->
 
-      
-      
     <h4>Get all Team</h4>
     
       <table class="table table-dark table-striped">
@@ -27,13 +25,10 @@
         </thead>
         <tbody>
           <tr 
-          *ngFor="let val of ProductDto; let i = index">
+          *ngFor="let team of listSoccerTeam; let i = index">
           
-            <th scope="row">{{val.teamCode  }} </th>
-            <td> {{val.teamName}} </td>
-            <!-- <td>{{val.price  | currency}} </td>
-            <td>{{val.val.teamCode   }} </td>
-            <td>{{val.minimunAlloweb}} </td> -->
+            <th scope="row">{{team.teamCode  }} </th>
+            <td> {{team.teamName}} </td>
           </tr>
          
         </tbody>

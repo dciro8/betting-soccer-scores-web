@@ -8,20 +8,20 @@ import { bettingSoccerService } from 'src/app/services/bettingSoccer.service';
   styleUrls: ['./SoccerTeam-list.component.css']
 })
 export class GetSoccerTeamListComponent implements OnInit {
-  ProductDto?: BettingSoccerDTO[];
+  listSoccerTeam?: BettingSoccerDTO[];
 
   constructor(private bettingSoccerSer: bettingSoccerService ) { }
 
   ngOnInit(): void {
-    this.getProductAll();
+    this.getSoccerTeamAll();
   }
 
-  getProductAll(): void {
+  getSoccerTeamAll(): void {
     this.bettingSoccerSer.getAllSoccerTeam()
       .subscribe(
         data => {
-          this.ProductDto = data;
-          console.log('this.ProductDto2',this.ProductDto);
+          this.listSoccerTeam = data;
+          console.log('this.ProductDto2',this.listSoccerTeam);
         },
         error => {
           console.log(error);
