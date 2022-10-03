@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { BettingSoccerDTO } from 'src/app/models/BettingSoccer.model';
-import { bettingSoccerService } from 'src/app/services/bettingSoccer.service';
+import { BettingSoccerDTO } from 'src/app/Shared/models/BettingSoccer.model';
+import { bettingSoccerService } from 'src/app/Shared/services/bettingSoccer.service';
 
 @Component({
   selector: 'app-SoccerTeam-list',
