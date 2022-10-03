@@ -52,3 +52,8 @@ TeamBId: Guid
  * Rápida programación
  * No depende de otros elementos
  * Verificar Covertura de código
+ * ![Pruebas_Unitarias](https://user-images.githubusercontent.com/13178792/193621399-720da2a4-599e-4051-a134-b7c1312bd000.PNG)
+ * Estado de la ejecución de las pruebas
+ * ![Pruebas_Unitarias_Karma](https://user-images.githubusercontent.com/13178792/193621931-15182f24-31d3-4771-92a2-0d950b6332ea.PNG)
+
+
