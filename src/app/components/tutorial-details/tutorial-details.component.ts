@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { bettingSoccerService} from 'src/app/services/bettingSoccer.service';
+import { bettingSoccerService} from 'src/app/Shared/services/bettingSoccer.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({

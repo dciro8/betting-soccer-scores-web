@@ -1,0 +1,49 @@
+<div>
+  <div class="submit-form">
+
+    <a class="nav-link"  translate>      {{ 'SystemParameters' }}
+    </a>
+      
+      <div class="form-group">
+          <label for="description">Team A</label>
+          <select id="select-menu" [(ngModel)]="selectedOption" class="bx--text-input" required name="actionSelection" >
+            <option  *ngFor="let team of listSoccerTeam"  [value]="team.id">{{team.teamName}}</option>
+        </select>
+          </div>
+
+      <div class="form-group">
+          <label for="description">Team B</label>
+          <select id="select-menu" [(ngModel)]="selectedOption" class="bx--text-input" required name="actionSelection" >
+            <option  *ngFor="let team of listSoccerTeam"  [value]="team.id">{{team.teamName}}</option>
+        </select>
+          </div>
+      <br>
+      <br>
+      <div class="form-group">
+          <label for="description">Score A</label>
+          <input class="form-control" id="MinimunAlloweb" 
+          type="number" required name="MinimunAlloweb" />
+          <!-- <input class="form-control" id="MinimunAlloweb" 
+          type="number" required [(ngModel)]="productDto.minimunAlloweb" name="MinimunAlloweb" /> -->
+      </div>
+
+      
+      <div class="form-group">
+        <label for="description">Score B</label>
+        <input class="form-control" id="MinimunAlloweb" 
+          type="number" required name="MinimunAlloweb" />
+          </div>
+      <!-- (click)="getRegister()"  -->
+      
+      <button 
+      class="btn btn-success">Submit</button>
+  </div>
+
+  
+
+  
+  <br>
+  <br>
+
+
+</div>
